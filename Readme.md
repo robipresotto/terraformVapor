@@ -1,5 +1,5 @@
 # terraformVapor
-Simples example how to dockerize and terraform locally your vapor app.
+Simple example how to dockerize and terraform locally your vapor app.
 
 ### Requirements
 - Docker
