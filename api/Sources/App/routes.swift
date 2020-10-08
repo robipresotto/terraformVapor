@@ -6,7 +6,7 @@ func routes(_ app: Application) throws {
   }
 
   app.get("hello") { req -> String in
-    let query = req.query["name"] ?? "undefinied"
+    let query = req.query["name"] ?? "undefined"
     return "Hello \(query)"
   }
 
