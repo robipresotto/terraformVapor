@@ -10,7 +10,7 @@ docker build -t $projectName .
 
 # terraform the api
 cd .. && cd terraform
-if .terraform 
+if [ -d ".terraform" ]
 then
   terraform apply
 else
