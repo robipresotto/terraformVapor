@@ -2,10 +2,11 @@
 
 set -eu
 
-export TF_VAR_app=$1
+read -p "Project name: " projectName
+export TF_VAR_app=$projectName
 
 # dockerize the api
-docker build -t $TF_VAR_app .
+docker build -t $projectName .
 
 # terraform the api
 cd .. && cd terraform
