@@ -6,8 +6,10 @@ func routes(_ app: Application) throws {
   }
 
   app.get("hello") { req -> String in
-    let query = req.query["name"] ?? "undefined"
-    return "Hello \(query)"
+    guard let query = req.query[String.self, at: "name"] else {
+      throw Abort(.badRequest, reason: "Missing name param.")
+    }
+    return "Hello \(query)!"
   }
 
 }
