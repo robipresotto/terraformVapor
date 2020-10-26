@@ -5,4 +5,7 @@ terraform {
       source = "terraform-providers/docker"
     }
   }
+  backend "local" {
+    path = "terraform/terraform.tfstate"
+  }
 }

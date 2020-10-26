@@ -6,8 +6,12 @@ Simple example how to dockerize and terraform locally your vapor app.
 - Terraform
 
 ### Getting Started
-Go to app/api and run the script:
+Make build to dockerize the app \
+Make deploy to terraform the app. 
 
 ```shell
-./run.sh
+make build && \
+make deploy
 ```
+
+Note: Make sure to port forward the docker port 8080.
