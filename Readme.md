@@ -14,4 +14,5 @@ make build && \
 make deploy
 ```
 
+The app will be available at: http://localhost:8080
 Note: Make sure to port forward the docker port 8080.
